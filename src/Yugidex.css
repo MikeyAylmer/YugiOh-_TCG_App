@@ -1,0 +1,18 @@
+.Yugidex {
+    text-align: center;
+}
+
+.Yugidex-title {
+    color: darkgray;
+}
+
+.Yugidex-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Yugidex-winner {
+    font-weight: bold;
+    color: orangered;
+}

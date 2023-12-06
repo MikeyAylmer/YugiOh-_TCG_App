@@ -1,0 +1,23 @@
+.Yugicard-image {
+    width: 300px;
+    margin: 1em;
+}
+
+.Yugicard {
+    display: inline-block;
+    width: 8em;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+.Yugicard-title {
+    color: blue;
+    font-weight: bold;
+}
+
+.Yugicard-data {
+    font-size: 80%;
+}
