@@ -2,24 +2,16 @@ import React from "react";
 import Yugicard from "./Yugicard";
 import "./Yugidex.css";
 
-/** Index of Pokemon: show individual cards.
- *
- * Props:
- * - pokemon: array of pokemon: { id, name, type, base_experience }
- * - exp: total of experience
- * - isWinner: true/false
- *
- * */
-
 function YugiDeck({ exp, isWinner, yugioh }) {
     const winMessage = isWinner
-        ? <p className="Pokedex-winner">THIS HAND WINS!</p>
+        ? <p className="Yugidex-winner">This Player Won!</p>
         : null;
 
     return (
-        <div className="Pokedex">
-            <h2 className="Pokedex-title">Yugi Deck</h2>
-            <div className="Pokedex-cards">
+        <div className="Yugidex">
+            <h2 className="Yugidex-title">Player Deck</h2>
+            <h4>Total ATK: {exp}</h4>
+            <div className="Yugidex-cards">
                 {yugioh.map(p => (
                     <Yugicard
                         key={p.id}  // Don't forget to add a unique key for each item in the list
@@ -30,7 +22,7 @@ function YugiDeck({ exp, isWinner, yugioh }) {
                     />
                 ))}
             </div>
-            <h4>Total experience: {exp}</h4>
+
             {winMessage}
         </div>
     );

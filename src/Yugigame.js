@@ -3,8 +3,6 @@ import React from "react";
 import Yugidecks from "./Yugidecks";
 
 const defaultYugioh = [
-    { id: 133, name: "Dark Magician", type: "Dark", base_experience: 2500 },
-    { id: 5054, name: "Blue-Eyes White Dragon", type: "Light/Dragon", base_experience: 3000 },
     { id: 74677422, name: "Red Eyes Black Dragon", type: "Dark/Dragon", base_experience: 2400 },
     { id: 89943723, name: "Elemental HERO Neos", type: "Hero", base_experience: 2500 },
     { id: 72989439, name: "Black Luster Soldier", type: "Dark", base_experience: 3000 },

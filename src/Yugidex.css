@@ -3,16 +3,19 @@
 }
 
 .Yugidex-title {
-    color: darkgray;
+    color: darkred;
 }
 
 .Yugidex-cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    border: 7px ridge black;
+    background-color: brown;
+    margin: 10px;
 }
 
 .Yugidex-winner {
     font-weight: bold;
-    color: orangered;
+    color: lime;
 }
